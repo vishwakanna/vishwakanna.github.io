@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vishwa | Personal Site</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
       padding: 0;
       background-color: #121212;
       color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .card {
       background-color: #1e1e1e;
-      padding: 30px;
+      padding: 30px 20px;
       border-radius: 20px;
       text-align: center;
       box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
       max-width: 400px;
+      width: 90%;
     }
 
     .card img {
@@ -36,20 +38,27 @@
     }
 
     .card h1 {
-      margin: 10px 0;
       font-size: 24px;
+      margin: 10px 0;
     }
 
     .card p {
       color: #aaaaaa;
-      margin-top: 0;
       font-size: 16px;
+      margin-top: 0;
+    }
+
+    .socials {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     .socials a {
       color: #00ffff;
-      margin: 0 10px;
-      font-size: 20px;
+      font-size: 22px;
       transition: color 0.3s ease;
       text-decoration: none;
     }
@@ -57,27 +66,43 @@
     .socials a:hover {
       color: #ffffff;
     }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 500px) {
+      .card {
+        padding: 20px 10px;
+      }
+
+      .card h1 {
+        font-size: 20px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      .socials a {
+        font-size: 20px;
+      }
+
+      .card img {
+        width: 110px;
+        height: 110px;
+      }
+    }
   </style>
 </head>
 <body>
-
   <div class="card">
-    <img src="vishwa.jpg" alt="Vishwa's photo">
-    <h1>Hi, I'm Vishwa kanna</h1>
-    <p>A passionate learner and aspiring developer exploring web, open source, and cool tech.</p>
+    <img src="vishwa.jpg" alt="Vishwa's photo" />
+    <h1>Hi, I'm Vishwa Kanna</h1>
+    <p>A passionate learner and aspiring developer exploring web development, open source, and cool tech.</p>
 
     <div class="socials">
-      <a href="https://wa.me/919360190027" target="_blank" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://instagram.com/_vishwa_vr_46_" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://twitter.com/VishwaKanna2005" target="_blank" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
+      <a href="https://wa.me/919360190027" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/_vishwa_vr_46_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/VishwaKanna2005" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
-
 </body>
 </html>
