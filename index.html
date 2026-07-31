@@ -69,37 +69,6 @@
   h1{ font-size:34px; font-weight:700; margin:0 0 6px; letter-spacing:-0.01em; }
   .role{ font-size:17px; color:var(--text-dim); margin:0; }
 
-  /* Terminal / API card */
-  .api-card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:var(--radius);
-    overflow:hidden;
-    margin:8px 0 44px;
-  }
-  .api-card .bar{
-    display:flex; align-items:center; gap:8px;
-    padding:10px 16px;
-    border-bottom:1px solid var(--border);
-    background:var(--surface-2);
-  }
-  .api-card .bar span{ width:9px; height:9px; border-radius:50%; background:#3a4046; }
-  .api-card .route{
-    font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--text-dim);
-    margin-left:6px;
-  }
-  .api-card .route .get{ color:var(--accent); font-weight:600; }
-  .api-card pre{
-    margin:0; padding:18px 20px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:13.5px; line-height:1.7;
-    color:#c7ccd1;
-    overflow-x:auto;
-  }
-  .api-card .k{ color:#7fb3ff; }
-  .api-card .s{ color:var(--accent); }
-  .api-card .b{ color:#e8a15c; }
-
   /* Section headings */
   h2{
     font-size:13px; text-transform:uppercase; letter-spacing:.14em;
@@ -185,19 +154,6 @@
         <h1>Vishwa Kanna</h1>
         <p class="role">Computer Science Undergraduate — Backend Development</p>
       </div>
-    </div>
-
-    <div class="api-card">
-      <div class="bar">
-        <span></span><span></span><span></span>
-        <span class="route"><span class="get">GET</span> /vishwa-kanna/about</span>
-      </div>
-      <pre><span class="b">{</span>
-  <span class="k">"based_in"</span>: <span class="s">"Chennai, India"</span>,
-  <span class="k">"focus"</span>: <span class="s">"Java, Spring Boot, REST APIs, PostgreSQL"</span>,
-  <span class="k">"currently_building"</span>: <span class="s">"MindVault AI — a personal RAG assistant"</span>,
-  <span class="k">"graduating"</span>: <span class="s">2027</span>
-<span class="b">}</span></pre>
     </div>
 
     <section>
